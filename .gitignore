@@ -1,0 +1,65 @@
+# ============================================
+# Secrets & environment files — NEVER commit these
+# ============================================
+.env
+.env.local
+.env.*.local
+application.properties
+application-*.properties
+!application.properties.example
+!**/.env.example
+
+# ============================================
+# Java / Maven (backend)
+# ============================================
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+*.log
+*.log.*
+
+# ============================================
+# Node / React / Vite (customer-app, admin-app, staff-kds-app)
+# ============================================
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json.bak
+
+# ============================================
+# IDE files
+# ============================================
+.idea/
+*.iml
+*.iws
+.vscode/
+!.vscode/extensions.json
+*.swp
+*.swo
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# ============================================
+# Misc build/output artifacts
+# ============================================
+*.tmp
+*.temp
+coverage/
+.turbo/

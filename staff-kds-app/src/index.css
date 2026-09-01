@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-kitchen-bg text-kitchen-text font-display;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible focus ring for keyboard/tablet accessibility */
+:focus-visible {
+  outline: 2px solid theme('colors.fresh');
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
