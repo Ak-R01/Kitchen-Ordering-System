@@ -110,6 +110,3 @@ Log into the admin app (seeded admin account) → **Tables** → create a table 
 - Generate a real random `jwt.secret` before running anywhere beyond localhost — never use the placeholder value.
 - Never commit `application.properties` or any `.env` file with real credentials — see `.gitignore`.
 
-## License
-
-Personal/educational project — no license specified.
