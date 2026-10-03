@@ -10,6 +10,31 @@ Built as a learning project to go deep on Spring Boot, real-time systems, and pr
 - **Kitchen staff** see new orders the instant they're placed, on a live-updating display, and move them through `Placed → Preparing → Ready → Served`.
 - **Admins** manage tables (and their QR codes), the menu, staff accounts, and can review full order history.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/customer-menu.png" alt="Customer ordering app - category rail and cart" />
+      <p align="center"><sub>Customer app — category-filtered menu with live cart</sub></p>
+    </td>
+    <td width="50%">
+      <img src="screenshots/kitchen-display.png" alt="Kitchen display - live order board" />
+      <p align="center"><sub>Kitchen display — live order board, updated in real time</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="screenshots/table-qr-code.png" alt="Admin app - table QR code generation" />
+      <p align="center"><sub>Admin — per-table QR code generation</sub></p>
+    </td>
+    <td width="50%">
+      <img src="screenshots/admin-menu-management.png" alt="Admin app - menu management" />
+      <p align="center"><sub>Admin — menu and category management</sub></p>
+    </td>
+  </tr>
+</table>
+
 ## Architecture
 
 Three independent React applications, all talking to one Spring Boot backend:
@@ -110,3 +135,6 @@ Log into the admin app (seeded admin account) → **Tables** → create a table 
 - Generate a real random `jwt.secret` before running anywhere beyond localhost — never use the placeholder value.
 - Never commit `application.properties` or any `.env` file with real credentials — see `.gitignore`.
 
+## License
+
+Personal/educational project — no license specified.
